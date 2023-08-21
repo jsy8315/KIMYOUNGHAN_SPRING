@@ -42,7 +42,7 @@ public class HelloController {
     //http의 body에 데이터를 직접 넣어주겠다란 의미
     public String helloString(@RequestParam("name") String name) {
         return "hello " + name;
-        //""hello " + name"이 그대로, 데이터를 내려줌
+        //""hello " + name"이 그대로, (뷰 그런거 없다) 데이터를 내려줌
     }
 
     @GetMapping("hello-api")
