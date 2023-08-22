@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <form action="/members/new" method="post">
+        <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+            <!--name="name"은 서버로 내려올 때 key가 된다-->
+            <!--MemberForm.java의 name과 위의 "name"이 일치하며, 값이 들어올 것-->
+            <!--작동방식-->
+            <!--createMemberForm.html에서, form의 빈칸에 "정수영"을 입력, 등록 버튼을 누르면-->
+            <!--action url인 "/members/new"로, post방식으로 넘어간다-->
+            <!--스프링은 MemberForm의 setName에 입력된 값 "정수영"을 넣어준다-->
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>
