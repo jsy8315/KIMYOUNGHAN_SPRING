@@ -9,11 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service //서비스임을 인지하여, 스프링이 (객체를 생성하여) 스프링 컨테이너에 (스프링 빈으로)등록해줌
+//@Service //서비스임을 인지하여, 스프링이 (객체를 생성하여) 스프링 컨테이너에 (스프링 빈으로)등록해줌
 public class MemberService {
     private final MemberRepository memberRepository;
 
-    @Autowired
+    //@Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
